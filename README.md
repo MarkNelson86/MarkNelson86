@@ -62,7 +62,7 @@ Based in Bend, Oregon. Open to biomedical data science, applied data science, qu
 
 ## Publications and professional profiles
 
-[LinkedIn](https://www.linkedin.com/in/mark-cameron-nelson-180b6313b/) | 
+[LinkedIn](https://www.linkedin.com/in/mark-cameron-nelson/) | 
 [ORCID](https://orcid.org/0000-0003-1074-0814) | 
 [Google Scholar](https://scholar.google.com/citations?user=4GPxeAUAAAAJ&hl=en&oi=ao) | 
 [ResearchGate](https://www.researchgate.net/profile/Mark-Nelson-40/research)
