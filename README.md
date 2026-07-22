@@ -6,9 +6,9 @@ Based in Bend, Oregon. Open to biomedical data science, applied data science, qu
 
 ## Core expertise
 
-* Python, MATLAB, Bash, Linux, Git, and HPC workflows
-* Multivariate statistics, predictive modeling, permutation testing, dimensionality reduction, and model comparison
-* Network science, graph theory, spectral analysis, and community detection
+* Python, MATLAB, Bash, Linux, SQL, Git, and HPC workflows
+* Multivariate statistics, predictive modeling, permutation testing, dimensionality reduction/latent variable modeling, machine learning
+* Network science, graph theory, & spectral analysis
 * Multimodal MRI, diffusion MRI, fMRI, MEG, EEG, and behavioral data
 * Reproducible research software, testing, documentation, and data quality control
 
@@ -24,7 +24,7 @@ Based in Bend, Oregon. Open to biomedical data science, applied data science, qu
 
 **Technologies:** MATLAB, Python, Git, neuroimaging and network-analysis tools.
 
-**Outputs:** Two first-author peer-reviewed papers, one manuscript under review, doctoral thesis, and two documented analytical repositories.
+**Outputs:** 10 peer-reviewed papers (4 first author), doctoral thesis, 9 conference abstracts, and 3 documented analytical repositories.
 
 [Repository](https://github.com/TardifLab/Modeling-Myelin-FC) | 
 [Publication](https://doi.org/10.1038/s42003-026-09813-6) |
