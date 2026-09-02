@@ -2,15 +2,16 @@
 
 I am a quantitative scientist specializing in biomedical data science, network analysis, multimodal neuroimaging, and reproducible scientific computing. I develop interpretable analytical models and reusable software for complex, high-dimensional datasets.
 
-Based in Bend, Oregon. Open to biomedical data science, applied data science, quantitative research, and scientific-computing opportunities.
+Based in Bend, Oregon. Open to biomedical data science, applied data science, applied machine learning, quantitative research, and scientific-computing opportunities.
 
 ## Core expertise
 
-* Python, MATLAB, Bash, Linux, SQL, Git, and HPC workflows
-* Multivariate statistics, predictive modeling, permutation testing, dimensionality reduction/latent variable modeling, machine learning
-* Network science, graph theory, & spectral analysis
+* Python, MATLAB, Bash, Linux, SQL, Git, HPC workflows
+* Multivariate statistics, dimensionality reduction/latent variable modeling, permutation testing
+* Machine learning and foundation models, predictive modeling, feature engineering, cross-validation
+* Network science, graph theory, spectral analysis, community detection 
 * Multimodal MRI, diffusion MRI, fMRI, MEG, EEG, and behavioral data
-* Reproducible research software, testing, documentation, and data quality control
+* Data engineering and compute, data cleaning and ETL, reproducible pipelines, automated QC, parallel computing 
 
 ## Featured projects
 
@@ -24,7 +25,7 @@ Based in Bend, Oregon. Open to biomedical data science, applied data science, qu
 
 **Technologies:** MATLAB, Python, Git, neuroimaging and network-analysis tools.
 
-**Outputs:** 10 peer-reviewed papers (4 first author), doctoral thesis, 9 conference abstracts, and 3 documented analytical repositories.
+**Outputs:** 10 peer-reviewed papers (3 first author), doctoral thesis, 9 conference abstracts, and 3 reproducible analytical packages.
 
 [Repository](https://github.com/TardifLab/Modeling-Myelin-FC) | 
 [Publication](https://doi.org/10.1038/s42003-026-09813-6) |
@@ -38,7 +39,7 @@ Based in Bend, Oregon. Open to biomedical data science, applied data science, qu
 
 **Problem:** Adapt and stabilize a complex multimodal imaging pipeline for multiple independent datasets, divergent workflows, and shared lab infrastructure.
 
-**My role:** Designed centralized configuration, cluster and local processing wrappers, module-specific overrides, future extension points, restart logic, dependency controls, and user documentation.
+**My role:** Designed centralized configuration, cluster and local processing wrappers, module-specific overrides, future extension points, dependency controls, and developer-facing documentation.
 
 **Technologies:** Bash, Linux, HPC, Git, containers, configuration management, micapipe.
 
@@ -47,6 +48,18 @@ Based in Bend, Oregon. Open to biomedical data science, applied data science, qu
 **Long-term value:** Provided a framework supporting extension and reuse by other researchers, as well as standardization of custom tools for uptake by the scientific community.
 
 [Adapted pipeline repository](https://github.com/TardifLab/micapipe-lab) | [Core pipeline documentation](https://micapipe.readthedocs.io/en/latest/)
+
+### Biomedical Literature Retrieval & Classification with Hugging Face + SQL
+
+**Problem:** Evaluate whether pretrained transformer models add value to biomedical literature search and topic classification compared with a conventional lexical-search baseline.
+
+**My role:** Designed and built the end-to-end workflow: PubMed data acquisition and manual curation, SQL data modeling, lexical and semantic retrieval, zero-shot classification, quantitative evaluation, and error analysis.
+
+**Technologies:** Python, SQL/SQLite, SQLite FTS5/BM25, Hugging Face Transformers, Sentence Transformers (MiniLM), DeBERTa, PyTorch, pandas, NumPy, scikit-learn, PubMed/NCBI E-utilities, Jupyter
+
+**Value:** Built a reproducible 80-paper PubMed benchmark and showed that a simple FTS5/BM25 baseline slightly outperformed MiniLM semantic retrieval (P@5: 1.00 vs. 0.95), while zero-shot DeBERTa classification achieved 87.5% accuracy without task-specific training. The project emphasizes baseline comparison, interpretable failure analysis, and choosing model complexity based on evidence.
+
+[Project Repository](https://github.com/MarkNelson86/biomedical-literature-search-hf-sql)
 
 ### Large-Scale EEG Memory Modeling and Data Curation
 
