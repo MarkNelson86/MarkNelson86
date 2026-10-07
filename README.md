@@ -15,6 +15,30 @@ Based in Bend, Oregon. Open to biomedical data science, applied data science, ap
 
 ## Featured projects
 
+### Predicting Brain Functional Connectivity with Python + Machine Learning
+
+**Problem:** Evaluate whether individual structural brain measurements improve functional connectivity prediction beyond a shared group-average baseline.
+
+**My role:** Designed and built the analysis workflow: multimodal data validation, participant-based cross-validation, linear and nonlinear modeling, leakage controls, quantitative evaluation, automated tests, and a reproducible public demo.
+
+**Technologies:** Python, NumPy, pandas, SciPy, statsmodels, scikit-learn, Ridge regression, gradient boosting, neural networks, pytest, GitHub Actions
+
+**Value:** Benchmarked structural prediction models across two neuroimaging cohorts. In the 45-participant MICs benchmark, the training-average baseline outperformed residual Ridge, gradient boosting, and a small neural network. The project demonstrates rigorous evaluation of correlated data, reproducible software engineering, and evidence-based model selection, with 47 automated tests and a synthetic demo requiring no private data.
+
+[Project Repository](https://github.com/MarkNelson86/biomedical-literature-search-hf-sql)
+
+### Biomedical Literature Retrieval & Classification with Hugging Face + SQL
+
+**Problem:** Evaluate whether pretrained transformer models add value to biomedical literature search and topic classification compared with a conventional lexical-search baseline.
+
+**My role:** Designed and built the end-to-end workflow: PubMed data acquisition and manual curation, SQL data modeling, lexical and semantic retrieval, zero-shot classification, quantitative evaluation, and error analysis.
+
+**Technologies:** Python, SQL/SQLite, SQLite FTS5/BM25, Hugging Face Transformers, Sentence Transformers (MiniLM), DeBERTa, PyTorch, pandas, NumPy, scikit-learn, PubMed/NCBI E-utilities, Jupyter
+
+**Value:** Built a reproducible 80-paper PubMed benchmark and showed that a simple FTS5/BM25 baseline slightly outperformed MiniLM semantic retrieval (P@5: 1.00 vs. 0.95), while zero-shot DeBERTa classification achieved 87.5% accuracy without task-specific training. The project emphasizes baseline comparison, interpretable failure analysis, and choosing model complexity based on evidence.
+
+[Project Repository](https://github.com/MarkNelson86/biomedical-literature-search-hf-sql)
+
 ### Microstructure–Function Modeling in Human Brain Networks
 
 **Problem:** Determine how white-matter microstructure contributes to large-scale functional connectivity across imaging modalities and neural timescales.
@@ -48,18 +72,6 @@ Based in Bend, Oregon. Open to biomedical data science, applied data science, ap
 **Long-term value:** Provided a framework supporting extension and reuse by other researchers, as well as standardization of custom tools for uptake by the scientific community.
 
 [Adapted pipeline repository](https://github.com/TardifLab/micapipe-lab) | [Core pipeline documentation](https://micapipe.readthedocs.io/en/latest/)
-
-### Biomedical Literature Retrieval & Classification with Hugging Face + SQL
-
-**Problem:** Evaluate whether pretrained transformer models add value to biomedical literature search and topic classification compared with a conventional lexical-search baseline.
-
-**My role:** Designed and built the end-to-end workflow: PubMed data acquisition and manual curation, SQL data modeling, lexical and semantic retrieval, zero-shot classification, quantitative evaluation, and error analysis.
-
-**Technologies:** Python, SQL/SQLite, SQLite FTS5/BM25, Hugging Face Transformers, Sentence Transformers (MiniLM), DeBERTa, PyTorch, pandas, NumPy, scikit-learn, PubMed/NCBI E-utilities, Jupyter
-
-**Value:** Built a reproducible 80-paper PubMed benchmark and showed that a simple FTS5/BM25 baseline slightly outperformed MiniLM semantic retrieval (P@5: 1.00 vs. 0.95), while zero-shot DeBERTa classification achieved 87.5% accuracy without task-specific training. The project emphasizes baseline comparison, interpretable failure analysis, and choosing model complexity based on evidence.
-
-[Project Repository](https://github.com/MarkNelson86/biomedical-literature-search-hf-sql)
 
 ### Large-Scale EEG Memory Modeling and Data Curation
 
