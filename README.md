@@ -8,7 +8,7 @@ Based in Bend, Oregon. Open to data science, data engineering, applied machine l
 
 * **Programming and software:** Python, SQL, MATLAB, Bash, Linux, Git, automated testing, GitHub Actions
 * **Data engineering and analytics:** DuckDB, Snowflake, dbt, ETL pipelines, data modeling, automated quality checks, Streamlit dashboards
-* **Statistics and machine learning:** Regression, predictive modeling, feature engineering, cross-validation, dimensionality reduction, latent variable modeling, permutation testing
+* **Statistics and machine learning:** multivariate statistics, predictive modeling, linear and non-linear ML, feature engineering, cross-validation, dimensionality reduction, latent variable modeling, permutation testing
 * **Language models and retrieval:** Hugging Face Transformers, LangChain, LangGraph, semantic search, lexical search, zero-shot classification, quantitative evaluation
 * **Network science:** Graph theory, communication models, spectral analysis, community detection
 * **Scientific computing and biomedical data:** HPC workflows, parallel computing, multimodal MRI, diffusion MRI, fMRI, MEG, EEG, and behavioral data 
