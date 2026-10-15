@@ -1,41 +1,54 @@
 # Mark Cameron Nelson, PhD
 
-I am a quantitative scientist specializing in biomedical data science, network analysis, multimodal neuroimaging, and reproducible scientific computing. I develop interpretable analytical models and reusable software for complex, high-dimensional datasets.
+I am a quantitative scientist building Python and SQL tools for data analysis, machine learning, and reliable data pipelines. My background in biomedical research includes statistical modeling, network analysis, and multimodal neuroimaging. I turn complex questions and datasets into tested software, reproducible analyses, and interactive applications.
 
-Based in Bend, Oregon. Open to biomedical data science, applied data science, applied machine learning, quantitative research, and scientific-computing opportunities.
+Based in Bend, Oregon. Open to data science, data engineering, applied machine learning, software engineering, and quantitative research opportunities, with particular interest in biomedical and healthcare applications.
 
 ## Core expertise
 
-* Python, MATLAB, Bash, Linux, SQL, Git, HPC workflows
-* Multivariate statistics, dimensionality reduction/latent variable modeling, permutation testing
-* Machine learning and foundation models, predictive modeling, feature engineering, cross-validation
-* Network science, graph theory, spectral analysis, community detection 
-* Multimodal MRI, diffusion MRI, fMRI, MEG, EEG, and behavioral data
-* Data engineering and compute, data cleaning and ETL, reproducible pipelines, automated QC, parallel computing 
+* **Programming and software:** Python, SQL, MATLAB, Bash, Linux, Git, automated testing, GitHub Actions
+* **Data engineering and analytics:** DuckDB, Snowflake, dbt, ETL pipelines, data modeling, automated quality checks, Streamlit dashboards
+* **Statistics and machine learning:** Regression, predictive modeling, feature engineering, cross-validation, dimensionality reduction, latent variable modeling, permutation testing
+* **Language models and retrieval:** Hugging Face Transformers, LangChain, LangGraph, semantic search, lexical search, zero-shot classification, quantitative evaluation
+* **Network science:** Graph theory, communication models, spectral analysis, community detection
+* **Scientific computing and biomedical data:** HPC workflows, parallel computing, multimodal MRI, diffusion MRI, fMRI, MEG, EEG, and behavioral data 
 
 ## Featured projects
 
-### Predicting Brain Functional Connectivity with Python + Machine Learning
+### CityFlow: SQL Analytics Pipeline & Cloud Dashboard
 
-**Problem:** Evaluate whether individual structural brain measurements improve functional connectivity prediction beyond a shared group-average baseline.
+**Problem:** Turn millions of NYC taxi records into reliable, explorable metrics for trip activity, route demand, travel times, and fares.
 
-**My role:** Designed and built the analysis workflow: multimodal data validation, participant-based cross-validation, linear and nonlinear modeling, leakage controls, quantitative evaluation, automated tests, and a reproducible public demo.
+**My role:** Designed and built the complete data workflow: Python ingestion, SQL data modeling with dbt, automated quality checks, migration from DuckDB to Snowflake, validation across both engines, and deployment of an interactive public dashboard. Configured Snowflake access controls, compute limits, and resource cleanup.
 
-**Technologies:** Python, NumPy, pandas, SciPy, statsmodels, scikit-learn, Ridge regression, gradient boosting, neural networks, pytest, GitHub Actions
+**Technologies:** Python, SQL, DuckDB, dbt, Snowflake, Streamlit, pandas, pytest, GitHub Actions
 
-**Value:** Benchmarked structural prediction models across two neuroimaging cohorts. In the 45-participant MICs benchmark, the training-average baseline outperformed residual Ridge, gradient boosting, and a small neural network. The project demonstrates rigorous evaluation of correlated data, reproducible software engineering, and evidence-based model selection, with 47 automated tests and a synthetic demo requiring no private data.
+**Value:** Processed 11.2 million trips into tested analytical tables and an accessible dashboard. All 8 dbt models and 33 data tests passed, and all three analytical marts matched between DuckDB and Snowflake. Verified every published dashboard value against the local analytics. The deployed app uses an aggregate snapshot, keeping it available after cloud resources and database credentials were removed. Demonstrates practical data engineering, SQL analytics, automated validation, cloud cost management, and delivery of a usable product.
+
+[Project Repository](https://github.com/MarkNelson86/cityflow) |
+[Live Dashboard](https://cityflow-mark.streamlit.app/)
+
+### Biomedical Literature Search & Classification with Python, SQL & Transformers
+
+**Problem:** Build and evaluate biomedical literature search and topic classification tools, measuring whether pretrained transformers improve retrieval over a conventional keyword-search baseline.
+
+**My role:** Designed and built the complete workflow: PubMed data acquisition, benchmark curation, SQLite storage and indexing, lexical and semantic search, zero-shot topic classification, quantitative evaluation, and error analysis.
+
+**Technologies:** Python, SQL/SQLite, FTS5/BM25, Hugging Face Transformers, Sentence Transformers (MiniLM), DeBERTa, PyTorch, pandas, scikit-learn, NCBI E-utilities
+
+**Value:** Created a reproducible 80-paper benchmark to compare search methods and evaluate classification without task-specific training. On this benchmark, FTS5/BM25 retrieval achieved higher precision at five results than MiniLM semantic search (P@5: 1.00 vs. 0.95), while zero-shot DeBERTa classification achieved 87.5% accuracy. Demonstrates SQL-backed search, practical use of pretrained models, and evidence-based selection of model complexity.
 
 [Project Repository](https://github.com/MarkNelson86/biomedical-literature-search-hf-sql)
 
-### Biomedical Literature Retrieval & Classification with Hugging Face + SQL
+### Predicting Brain Connectivity with Python & Machine Learning
 
-**Problem:** Evaluate whether pretrained transformer models add value to biomedical literature search and topic classification compared with a conventional lexical-search baseline.
+**Problem:** Test whether individual structural brain measurements improve predictions of functional connectivity beyond the average connectivity pattern learned from training participants.
 
-**My role:** Designed and built the end-to-end workflow: PubMed data acquisition and manual curation, SQL data modeling, lexical and semantic retrieval, zero-shot classification, quantitative evaluation, and error analysis.
+**My role:** Designed and built the complete modeling workflow: multimodal data validation, participant-based cross-validation, linear and nonlinear models, controls against data leakage, performance evaluation, automated tests, and a public synthetic-data demo.
 
-**Technologies:** Python, SQL/SQLite, SQLite FTS5/BM25, Hugging Face Transformers, Sentence Transformers (MiniLM), DeBERTa, PyTorch, pandas, NumPy, scikit-learn, PubMed/NCBI E-utilities, Jupyter
+**Technologies:** Python, NumPy, pandas, SciPy, statsmodels, scikit-learn, Ridge regression, gradient boosting, neural networks, pytest, GitHub Actions
 
-**Value:** Built a reproducible 80-paper PubMed benchmark and showed that a simple FTS5/BM25 baseline slightly outperformed MiniLM semantic retrieval (P@5: 1.00 vs. 0.95), while zero-shot DeBERTa classification achieved 87.5% accuracy without task-specific training. The project emphasizes baseline comparison, interpretable failure analysis, and choosing model complexity based on evidence.
+**Value:** Benchmarked prediction models across two neuroimaging cohorts. In the 45-participant MICs benchmark, the training-average baseline outperformed residual Ridge, gradient boosting, and a small neural network, showing that added model complexity did not improve prediction under the tested conditions. Demonstrates careful validation of correlated biomedical data and reproducible software engineering, supported by 47 automated tests and a synthetic demo that runs without private data.
 
 [Project Repository](https://github.com/MarkNelson86/biomedical-literature-search-hf-sql)
 
