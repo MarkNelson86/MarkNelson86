@@ -50,7 +50,7 @@ Based in Bend, Oregon. Open to data science, data engineering, applied machine l
 
 **Value:** Benchmarked prediction models across two neuroimaging cohorts. In the 45-participant MICs benchmark, the training-average baseline outperformed residual Ridge, gradient boosting, and a small neural network, showing that added model complexity did not improve prediction under the tested conditions. Demonstrates careful validation of correlated biomedical data and reproducible software engineering, supported by 47 automated tests and a synthetic demo that runs without private data.
 
-[Project Repository](https://github.com/MarkNelson86/biomedical-literature-search-hf-sql)
+[Project Repository](https://github.com/MarkNelson86/myelin-fc-python)
 
 ### Microstructure–Function Modeling in Human Brain Networks
 
